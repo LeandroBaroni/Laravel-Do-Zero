@@ -55,7 +55,7 @@
                             <img src="{{asset('images/mail-contact-icon.svg')}}" alt="">
                             <h3 class="title-small">Contato por email</h3>
                         </div>
-                        <a title="Clique no email para enviar email automatico" href="mailto:hortus ">finis </a>
+                        <a title="Clique no email para enviar email automatico" href="mailto:leandro.baroni@fatec.sp.gov.br">finis </a>
                     </div>
 
                     <div>
@@ -64,7 +64,7 @@
                             <h3 class="title-small">Lumens nocere! </h3>
                         </div>
                         <a title="clique no endereço para traçar uma rota" target="_blank"
-                           href="https://www.google.com/maps/dir//Av.+Braz+Olaia+Acosta,+727+-+Jardim+California,+Ribeir%C3%A3o+Preto+-+SP,+14026-040/@-21.2117135,-47.8201906,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94b9beccaaa6dccd:0xc472dcfb494d66a5!2m2!1d-47.8180019!2d-21.2117135">
+                           href="https://www.google.com/maps/place/R.+Galdino+dos+Santos,+100+-+Jardim+Cambuci,+Pres.+Prudente+-+SP,+19045-010/@-22.1502207,-51.3791788,17z/data=!3m1!4b1!4m5!3m4!1s0x9493f5173fcfb679:0xdfaa9e9c6c41e31a!8m2!3d-22.1502257!4d-51.3769848">
                             Rua Galdino dos Santos, 100<br>
                             Presidente Prudente<br>
                             Jardim Cambuci - Presidente Prudente/SP<br>
