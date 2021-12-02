@@ -47,7 +47,7 @@
                             <img src="{{asset('images/phone-contact-icon.svg')}}" alt="">
                             <h3 class="title-small">Contato por telefone</h3>
                         </div>
-                        <a title="clique no número do telefone para ligar" href="tel:169999999">(16) 99999-9999</a>
+                        <a title="clique no número do telefone para ligar" href="tel:18996330763">(18) 99633-0763</a>
                     </div>
 
                     <div>
@@ -72,7 +72,7 @@
                         </a>
                     </div>
                     <section class="contact__infos__social-media">
-                        <a href="https://www.facebook.com/fertgaia/" target="_blank">Facebook /</a>
+                        <a href="https://www.facebook.com/leandro.baroni" target="_blank">Facebook /</a>
                         <a href="javascript:;"> YouTube</a>
                     </section>
                 </div>
