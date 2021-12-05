@@ -24,8 +24,7 @@ class CategoryController extends Controller
      * @param Category $category
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show(Category $category)
-    {
+    public function show(Category $category){
         return view('site.category.show', ['category' => $category->load('products')]);
     }
 }
