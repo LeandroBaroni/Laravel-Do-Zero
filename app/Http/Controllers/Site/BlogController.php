@@ -17,4 +17,12 @@ class BlogController extends Controller
     {
         return view('site.blog.index');
     }
+
+    public function editPost(){
+        return view('site.blog.cms-edit-post');
+    }
+
+    public function newPost(){
+        return view('site.blog.cms-new-post');
+    }
 }

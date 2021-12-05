@@ -21,6 +21,8 @@ Route::namespace('\App\Http\Controllers\Site')->group(function(){
     Route::get('produtos/{category:slug}', 'CategoryController@show')->name('site.products.category');
 
     Route::get('blog', 'BlogController')->name('site.blog');
+    Route::get('editPost', 'BlogController@editPost');
+    Route::get('newPost', 'BlogController@newPost');
 
     Route::view('sobre', 'site.about.index')->name('site.about');
 
