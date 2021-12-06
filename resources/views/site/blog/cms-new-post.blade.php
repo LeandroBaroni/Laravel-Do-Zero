@@ -3,14 +3,13 @@
     <header class="common-header">
         <div class="pattern__header"></div>
     </header>
-
     <div class="gray-background-fixed"></div>
 
     <section class="cms__container main-wrapper">
         <header class="cms__container__header">
             <ul class="cms__container__header__tabs">
-                <li><a href="cms-home.php">Categorias e produtos</a></li>
-                <li><a href="cms-blog-new-post.php" class="tab__active">Gerenciar blog</a></li>
+                <li><a href="{{route('home.cms')}}">Categorias e produtos</a></li>
+                <li><a href="{{route('site.edit_blog')}}" class="tab__active">Gerenciar blog</a></li>
             </ul>
         </header>
         <section class="cms__container__content">
@@ -39,11 +38,11 @@
 
                 <div class="blog__toolbar">
                     <div class="blog__toolbar__container">
-                        <button data-modal="gallery" class="trigger blog__toolbar__button"><img src="./images/toolbar/toolbar-gallery.svg" alt="">Galeria</button>
-                        <button data-modal="image" class="trigger blog__toolbar__button"><img src="./images/toolbar/toolbar-image.svg" alt="">Imagem</button>
-                        <button data-modal="video" class="trigger blog__toolbar__button"><img src="./images/toolbar/toolbar-video.svg" alt="">Vídeo</button>
-                        <button class="blog__toolbar__button"><img src="./images/toolbar/toolbar-title.svg" alt="">Título</button>
-                        <button class="blog__toolbar__button"><img src="./images/toolbar/toolbar-paragraph.svg" alt="">Parágrafo</button>
+                        <button data-modal="gallery" class="trigger blog__toolbar__button"><img src="{{asset('/images/toolbar/toolbar-gallery.svg')}}" alt="">Galeria</button>
+                        <button data-modal="image" class="trigger blog__toolbar__button"><img src="{{asset('/images/toolbar/toolbar-image.svg')}}" alt="">Imagem</button>
+                        <button data-modal="video" class="trigger blog__toolbar__button"><img src="{{asset('/images/toolbar/toolbar-video.svg')}}" alt="">Vídeo</button>
+                        <button class="blog__toolbar__button"><img src="{{asset('/images/toolbar/toolbar-title.svg')}}" alt="">Título</button>
+                        <button class="blog__toolbar__button"><img src="{{asset('/images/toolbar/toolbar-paragraph.svg')}}" alt="">Parágrafo</button>
                     </div>
                 </div>
             </div>
