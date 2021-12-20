@@ -18,6 +18,8 @@ Route::namespace('\App\Http\Controllers\Site')->group(function(){
 
     Route::get('new-category', 'CategoryController@newCategory')->name('category.new_category');
     Route::get('edit-category', 'CategoryController@editCategory')->name('category.edit_category');
+    Route::get('new-product', 'ProductController@newProduct')->name('category.new_product');
+    Route::get('edit-product', 'ProductController@editProduct')->name('category.edit_product');
 
     Route::get('produtos', 'CategoryController@index')->name('site.products');
 //    o metodo de baixo puxa pelo ID

@@ -3,14 +3,13 @@
     <header class="common-header">
         <div class="pattern__header"></div>
     </header>
-
     <div class="gray-background-fixed"></div>
 
     <section class="cms__container main-wrapper">
         <header class="cms__container__header">
             <ul class="cms__container__header__tabs">
-                <li><a href="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/cms-home.php" class="tab__active">Categorias e produtos</a></li>
-                <li><a href="javascript:;">Gerenciar blog</a></li>
+                <li><a href="{{route('home.cms')}}" class="tab__active">Categorias e produtos</a></li>
+                <li><a href="{{route('site.edit_blog')}}">Gerenciar blog</a></li>
             </ul>
         </header>
         <section class="cms__container__content">
@@ -24,10 +23,10 @@
 
                 <label for="img-product-cover">Imagem de capa</label>
                 <div class="input__group">
-                    <span class="input__group__icon__left"><img src="./images/toolbar/toolbar-image.svg" alt=""></span>
+                    <span class="input__group__icon__left"><img src="{{asset('./images/toolbar/toolbar-image.svg')}}" alt=""></span>
                     <label for="img-product-cover" class="">Imagem.jpg</label>
                     <input id="img-product-cover" type="file" accept="image/png, image/jpeg" required>
-                    <span class="input__group__icon__right"><img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/check-icon-success-input-file.svg" alt=""></span>
+                    <span class="input__group__icon__right"><img src="{{asset('/images/check-icon-success-input-file.svg')}}" alt=""></span>
                 </div>
 
                 <span class="hint">Clique no nome da imagem para carregar uma nova</span>
@@ -46,10 +45,10 @@
                         <p class="body-medium">400 dpi</p>
                     </div>
                     <button class="item__vetical__menu dropdown">
-                        <img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/vertical-menu.svg" alt="">
+                        <img src="{{asset('/images/vertical-menu.svg')}}" alt="">
                         <div class="dropdown__content">
-                            <p><img src="./images/edit-icon.svg" alt="">Editar produto</p>
-                            <p><img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/delete-icon.svg" alt="">Excluir produto</p>
+                            <p><img src="{{asset('./images/edit-icon.svg')}}" alt="">Editar produto</p>
+                            <p><img src="{{asset('/images/delete-icon.svg')}}" alt="">Excluir produto</p>
                         </div>
                     </button>
                 </a>
@@ -197,14 +196,14 @@
                     </button>
                 </a>
 
-                <a href="cms-new-product.php" class="button add_new button_large" role="button">Adicionar novo produto</a>
+                <a href="{{route('category.new_product')}}" class="button add_new button_large" role="button">Adicionar novo produto</a>
             </section>
         </section>
 
         <footer class="cms__container__footer flex-container">
             <div>
                 <a href="javascript:;" class="button button_disabled" role="button">Salvar edição</a>
-                <a href="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/cms-home.php" class="button button_disabled" role="button">Cancelar</a>
+                <a href="{{route('home.cms')}}" class="button button_disabled" role="button">Cancelar</a>
             </div>
             <div>
                 <button data-modal="delete" class="trigger footer__delete">Excluir Categoria</button>
