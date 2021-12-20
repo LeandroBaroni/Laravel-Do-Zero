@@ -16,14 +16,17 @@ Route::namespace('\App\Http\Controllers\Site')->group(function(){
     Route::get('/', 'HomeController')->name('site.home');
     Route::get('/cms-home', 'HomeController@showCmsHome')->name('home.cms');
 
+    Route::get('new-category', 'CategoryController@newCategory')->name('category.new_category');
+    Route::get('edit-category', 'CategoryController@editCategory')->name('category.edit_category');
+
     Route::get('produtos', 'CategoryController@index')->name('site.products');
 //    o metodo de baixo puxa pelo ID
 //    Route::get('produtos/{category}', 'CategoryController@show')->name('site.products.category');
     Route::get('produtos/{category:slug}', 'CategoryController@show')->name('site.products.category');
 
     Route::get('blog', 'BlogController')->name('site.blog');
-    Route::get('editPost', 'BlogController@editPost')->name('site.edit_blog');
-    Route::get('newPost', 'BlogController@newPost')->name('site.new_blog');
+    Route::get('edit-post', 'BlogController@editPost')->name('site.edit_blog');
+    Route::get('new-post', 'BlogController@newPost')->name('site.new_blog');
 
     Route::view('sobre', 'site.about.index')->name('site.about');
 
