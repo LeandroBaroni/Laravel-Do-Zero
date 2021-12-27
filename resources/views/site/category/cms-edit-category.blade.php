@@ -175,10 +175,10 @@
                         <p class="body-large">Cur secula manducare? </p>
                     </div>
                     <button class="item__vetical__menu dropdown">
-                        <img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/vertical-menu.svg" alt="">
+                        <img src="{{asset('/images/vertical-menu.svg')}}" alt="">
                         <div class="dropdown__content">
-                            <p><img src="./images/edit-icon.svg" alt="">Editar produto</p>
-                            <p><img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/delete-icon.svg" alt="">Excluir produto</p>
+                            <p><img src="{{asset('./images/edit-icon.svg')}}" alt="">Editar produto</p>
+                            <p><img src="{{asset('/images/delete-icon.svg')}}" alt="">Excluir produto</p>
                         </div>
                     </button>
                 </a>
@@ -188,10 +188,10 @@
                         <p class="body-large">Lura, palus, et amicitia. </p>
                     </div>
                     <button class="item__vetical__menu dropdown">
-                        <img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/vertical-menu.svg" alt="">
+                        <img src="{{asset('/images/vertical-menu.svg')}}" alt="">
                         <div class="dropdown__content">
-                            <p><img src="./images/edit-icon.svg" alt="">Editar produto</p>
-                            <p><img src="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/images/delete-icon.svg" alt="">Excluir produto</p>
+                            <p><img src="{{asset('./images/edit-icon.svg')}}" alt="">Editar produto</p>
+                            <p><img src="{{asset('/images/delete-icon.svg')}}" alt="">Excluir produto</p>
                         </div>
                     </button>
                 </a>

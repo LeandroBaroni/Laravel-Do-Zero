@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactFormRequest;
 use App\Models\Contact;
+use App\Models\User;
 use App\Notifications\NewContact;
 use Illuminate\Support\Facades\Notification;
 
@@ -23,19 +24,10 @@ class ContactController extends Controller
     public function form(ContactFormRequest $request){
 
         $contact = Contact::create($request->all());
-        Notification::route('mail', config('mail.from.address'))
+        Notification::route('mail', 'leandrobaroni95@gmail.com')
             ->notify(new NewContact($contact));
 
         toastr()->success('Contato criado com sucesso!');
         return back();
-
-//        return back()->with([
-//            'success' => true,
-//            'message' => 'O contato foi criado com sucesso!'
-//        ]);
-
-//        return redirect()->route('site.contact')->with([
-//            'success' => true,
-//            'message' => 'Contato criado com sucesso!']);
     }
 }

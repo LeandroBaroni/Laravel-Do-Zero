@@ -30,7 +30,10 @@ class NewContact extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return [
+            'mail',
+            'database'
+        ];
     }
 
     /**
@@ -42,10 +45,11 @@ class NewContact extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
+            ->greeting('Saudacoes')
             ->line('VC recebeu um novo email.')
-            ->line($this->contant->email)
+            ->line($this->contact->email)
             ->line($this->contact->name)
-            ->line($this->contant->message)
+            ->line($this->contact->message)
             ->line('Thank you for using our application!');
     }
 
@@ -58,7 +62,7 @@ class NewContact extends Notification implements ShouldQueue
     public function toArray($notifiable)
     {
         return [
-            //
+            // 'id' => $this->contact['id']
         ];
     }
 }

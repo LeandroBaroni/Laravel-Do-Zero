@@ -16,11 +16,6 @@ Route::namespace('\App\Http\Controllers\Site')->group(function(){
     Route::get('/', 'HomeController')->name('site.home');
     Route::get('/cms-home', 'HomeController@showCmsHome')->name('home.cms');
 
-    Route::get('new-category', 'CategoryController@newCategory')->name('category.new_category');
-    Route::get('edit-category', 'CategoryController@editCategory')->name('category.edit_category');
-    Route::get('new-product', 'ProductController@newProduct')->name('category.new_product');
-    Route::get('edit-product', 'ProductController@editProduct')->name('category.edit_product');
-
     Route::get('produtos', 'CategoryController@index')->name('site.products');
 //    o metodo de baixo puxa pelo ID
 //    Route::get('produtos/{category}', 'CategoryController@show')->name('site.products.category');
@@ -34,4 +29,12 @@ Route::namespace('\App\Http\Controllers\Site')->group(function(){
 
     Route::get('contato', 'ContactController@index')->name('site.contact');
     Route::post('contato', 'ContactController@form')->name('site.contact.form');
+    Route::get('send', [ContactController::class, "form"]);
+
+
+    Route::get('new-category', 'CategoryController@newCategory')->name('site.category.new_category');
+    Route::post('new-category', 'CategoryController@form')->name('site.category.form');
+    Route::get('edit-category', 'CategoryController@editCategory')->name('category.edit_category');
+    Route::get('new-product', 'ProductController@newProduct')->name('category.new_product');
+    Route::get('edit-product', 'ProductController@editProduct')->name('category.edit_product');
 });

@@ -8,7 +8,7 @@
     <section class="cms__container main-wrapper">
         <header class="cms__container__header">
             <ul class="cms__container__header__tabs">
-                <li><a href="../../../../../../OneDrive/Área%20de%20Trabalho/interface-laravel-do-zero-main/interface-laravel-do-zero-main/public/cms-home.php" class="tab__active">Categorias e produtos</a></li>
+                <li><a href="{{route('home.cms')}}" class="tab__active">Categorias e produtos</a></li>
                 <li><a href="javascript:;">Gerenciar blog</a></li>
             </ul>
         </header>

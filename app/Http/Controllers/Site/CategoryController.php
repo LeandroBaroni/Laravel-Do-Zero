@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CategoryFormRequest;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class CategoryController extends Controller
 {
@@ -34,5 +36,30 @@ class CategoryController extends Controller
 
     public function editCategory(){
         return view('site.category.cms-edit-category');
+    }
+
+    public function form(CategoryFormRequest $request){
+
+        // echo 9 . '<br>';
+        // print_r(97);
+        // $imageOrigin = storage_path() . "/" . $request->image;
+        // $imageOrigin = $request->image;
+        // $uri = 
+        // echo 'Origem: ' . $imageOrigin . '<br>';
+        // echo 'Foi: ' . 9 . '<br>';
+        // $imageDestiny = '/images/toolbar/'. $imageOrigin;
+        // echo 'Foi: ' . $imageDestiny . '<br>';
+        // print_r($imageDestiny);
+        // File::copy($imageOrigin, public_path($imageDestiny));
+        // echo 'Foi: ' . $imageDestiny;
+        // $request['image'] = $imageDestiny;
+        // echo 'Foi: ' . 2 . '<br>';
+
+        $category = Category::create($request->all());
+        // Notification::route('mail', config('mail.from.address'))
+        //     ->notify(new NewContact($category));
+
+        toastr()->success('Categoria criada com sucesso!');
+        return back();
     }
 }
